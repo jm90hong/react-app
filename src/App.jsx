@@ -5,6 +5,8 @@ import HomePage from './page/HomePage';
 import LoginPage from './page/LoginPage';
 import StateTestPage from './page/StateTestPage';
 import RestTestPage from './page/RestTestPage';
+import MemoAndCallbackPage from './page/MemoAndCallbackPage';
+import CustomHookPage from './page/CustomHookPage';
 
 export default function App(){
     return(
@@ -21,6 +23,14 @@ export default function App(){
 
                 {/* RestTest */}
                 <Route path="/rest_test" element={<RestTestPage />} />
+
+
+                {/* custom hook */}
+                <Route path="/custom_hook" element={<CustomHookPage />} />
+
+
+                {/* Memo and Callback */}
+                <Route path="/memo_callback" element={<MemoAndCallbackPage />} />
             </Routes>
         </BrowserRouter>
     );
